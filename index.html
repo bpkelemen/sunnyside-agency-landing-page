@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- displays site properly based on user's device -->
+
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="./images/favicon-32x32.png"
+		/>
+		<!-- FONTS -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght@700;900&display=swap"
+			rel="stylesheet"
+		/>
+		<!-- CSS -->
+		<link rel="stylesheet" href="./css/style.css" />
+		<title>Frontend Mentor | Sunnyside agency landing page</title>
+	</head>
+	<body>
+		<div class="container">
+			<!-- NAVBAR START -->
+			<nav class="navbar">
+				<img src="./images/logo.svg" alt="logo" class="logo" />
+				<div class="menu">
+					<div class="triangle"></div>
+					<div class="menu-links">
+						<ul>
+							<li><a href="#">About</a></li>
+							<li><a href="#">Services</a></li>
+							<li><a href="#">Projects</a></li>
+							<li class="active"><a href="#">Contact</a></li>
+						</ul>
+					</div>
+				</div>
+				<img
+					src="./images/icon-hamburger.svg"
+					alt="hamburger"
+					class="hamburger"
+				/>
+			</nav>
+			<!-- NAVBAR END -->
+			<!-- HERO SECTION START -->
+			<section class="hero">
+				<picture>
+					<source
+						media="(max-width: 768px)"
+						srcset="./images/mobile/image-header.jpg"
+					/>
+					<source
+						media="(min-width: 769px)"
+						srcset="./images/desktop/image-header.jpg"
+					/>
+					<img src="./images/desktop/image-header.jpg" alt="orange slice" />
+				</picture>
+				<div class="hero-text">
+					<h1>We are creatives</h1>
+					<img src="./images/icon-arrow-down.svg" alt="arow down icon" />
+				</div>
+			</section>
+			<!-- HERO SECTION END -->
+			<!-- MAIN SECTION START -->
+			<section class="main">
+				<div class="image-box flex-order-2">
+					<picture>
+						<source
+							media="(max-width: 768px)"
+							srcset="./images/mobile/image-transform.jpg"
+						/>
+						<source
+							media="(min-width: 769px)"
+							srcset="./images/desktop/image-transform.jpg"
+						/>
+						<img src="./images/desktop/image-transform.jpg" alt="egg" />
+					</picture>
+				</div>
+				<div class="text-box flex-order-1 text-box-left">
+					<h2>Transform your brand</h2>
+					<p>
+						We are a full-service creative agency specializing in helping brands
+						grow fast. Engage your clients through compelling visuals that do
+						most of the marketing for you.
+					</p>
+					<div class="learn-more">
+						<a href="#">Learn more</a>
+						<div class="link-decoration yellow"></div>
+					</div>
+				</div>
+				<div class="image-box flex-order-3">
+					<picture>
+						<source
+							media="(max-width: 768px)"
+							srcset="./images/mobile/image-stand-out.jpg"
+						/>
+						<source
+							media="(min-width: 769px)"
+							srcset="./images/desktop/image-stand-out.jpg"
+						/>
+						<img src="./images/desktop/image-stand-out.jpg" alt="glass" />
+					</picture>
+				</div>
+				<div class="text-box flex-order-4 text-box-right">
+					<h2>Stand out to the right audience</h2>
+					<p>
+						Using a collaborative formula of designers, researchers,
+						photographers, videographers, and copywriters, we’ll build and
+						extend your brand in digital places.
+					</p>
+					<div class="learn-more">
+						<a href="#">Learn more</a>
+						<div class="link-decoration red"></div>
+					</div>
+				</div>
+
+				<div class="image-text-box flex-order-5">
+					<picture>
+						<source
+							media="(max-width: 768px)"
+							srcset="./images/mobile/image-graphic-design.jpg"
+						/>
+						<source
+							media="(min-width: 769px)"
+							srcset="./images/desktop/image-graphic-design.jpg"
+						/>
+						<img src="./images/desktop/image-graphic-design.jpg" alt="cherry" />
+					</picture>
+					<div class="inner-text">
+						<h2 class="green-tint">Graphic design</h2>
+						<p class="green-tint">
+							Great design makes you memorable. We deliver artwork that
+							underscores your brand message and captures potential clients’
+							attention.
+						</p>
+					</div>
+				</div>
+				<div class="image-text-box flex-order-6">
+					<picture>
+						<source
+							media="(max-width: 768px)"
+							srcset="./images/mobile/image-photography.jpg"
+						/>
+						<source
+							media="(min-width: 769px)"
+							srcset="./images/desktop/image-photography.jpg"
+						/>
+						<img src="./images/desktop/image-photography.jpg" alt="orange" />
+					</picture>
+					<div class="inner-text">
+						<h2 class="blue-tint">Photography</h2>
+						<p class="blue-tint">
+							Increase your credibility by getting the most stunning,
+							high-quality photos that improve your business image.
+						</p>
+					</div>
+				</div>
+			</section>
+			<!-- MAIN SECTION END -->
+			<!-- TESTIMONIALS SECTION START -->
+			<section class="testimonials">
+				<h2>Client testimonials</h2>
+				<div class="testimonials-wrap">
+					<div class="testimonial">
+						<img src="./images/image-emily.jpg" alt="picture of Emily R." />
+						<p>
+							We put our trust in Sunnyside and they delivered, making sure our
+							needs were met and deadlines were always hit.
+						</p>
+						<h3>Emily R.</h3>
+						<p class="position">Marketing Director</p>
+					</div>
+					<div class="testimonial">
+						<img src="./images/image-thomas.jpg" alt="picture of Thomas S." />
+						<p>
+							Sunnyside’s enthusiasm coupled with their keen interest in our
+							brand’s success made it a satisfying and enjoyable experience.
+						</p>
+						<h3>Thomas S.</h3>
+						<p class="position">Chief Operating Officer</p>
+					</div>
+					<div class="testimonial">
+						<img src="./images/image-jennie.jpg" alt="picture of Jennie F." />
+						<p>
+							Incredible end result! Our sales increased over 400% when we
+							worked with Sunnyside. Highly recommended!
+						</p>
+						<h3>Jennie F.</h3>
+						<p class="position">Business Owner</p>
+					</div>
+				</div>
+			</section>
+			<!-- TESTIMONIALS SECTION END -->
+			<!-- GALLERY SECTION START -->
+			<section class="gallery">
+				<div class="picture">
+					<picture>
+						<source
+							media="(max-width: 768px)"
+							srcset="./images/mobile/image-gallery-milkbottles.jpg"
+						/>
+						<source
+							media="(min-width: 769px)"
+							srcset="./images/desktop/image-gallery-milkbottles.jpg"
+						/>
+						<img
+							src="./images/desktop/image-gallery-milkbottles.jpg"
+							alt="milk bottles"
+						/>
+					</picture>
+				</div>
+				<div class="picture">
+					<picture>
+						<source
+							media="(max-width: 768px)"
+							srcset="./images/mobile/image-gallery-orange.jpg"
+						/>
+						<source
+							media="(min-width: 769px)"
+							srcset="./images/desktop/image-gallery-orange.jpg"
+						/>
+						<img src="./images/desktop/image-gallery-orange.jpg" alt="orange" />
+					</picture>
+				</div>
+				<div class="picture">
+					<picture>
+						<source
+							media="(max-width: 768px)"
+							srcset="./images/mobile/image-gallery-cone.jpg"
+						/>
+						<source
+							media="(min-width: 769px)"
+							srcset="./images/desktop/image-gallery-cone.jpg"
+						/>
+						<img src="./images/desktop/image-gallery-cone.jpg" alt="cone" />
+					</picture>
+				</div>
+				<div class="picture">
+					<picture>
+						<source
+							media="(max-width: 768px)"
+							srcset="./images/mobile/image-gallery-sugar-cubes.jpg"
+						/>
+						<source
+							media="(min-width: 769px)"
+							srcset="./images/desktop/image-gallery-sugarcubes.jpg"
+						/>
+						<img
+							src="./images/desktop/image-gallery-sugarcubes.jpg"
+							alt="sugar cubes"
+						/>
+					</picture>
+				</div>
+			</section>
+			<!-- GALLERY SECTION END -->
+			<!-- FOOTER SECTION START -->
+
+			<footer>
+				<img src="./images/logo.svg" alt="logo" class="logo" />
+				<ul class="footer-menu">
+					<li><a href="#">About</a></li>
+					<li><a href="#">Services</a></li>
+					<li><a href="#">Projects</a></li>
+					<li><a href="#">Contact</a></li>
+				</ul>
+				<ul class="social-media">
+					<li>
+						<a href="#"
+							><img src="./images/icon-facebook.svg" alt="facebook icon"
+						/></a>
+					</li>
+					<li>
+						<a href="#"
+							><img src="./images/icon-instagram.svg" alt="instagram icon"
+						/></a>
+					</li>
+					<li>
+						<a href="#"
+							><img src="./images/icon-twitter.svg" alt="twitter icon"
+						/></a>
+					</li>
+					<li>
+						<a href="#"
+							><img src="./images/icon-pinterest.svg" alt="pinterest icon"
+						/></a>
+					</li>
+				</ul>
+			</footer>
+			<!-- FOOTER SECTION END -->
+		</div>
+
+		<script>
+			const hamburger = document.querySelector('.hamburger');
+			const mobileMenu = document.querySelector('.menu');
+
+			hamburger.addEventListener('click', function () {
+				hamburger.classList.toggle('fade');
+				mobileMenu.classList.toggle('menu-mobile');
+			});
+		</script>
+	</body>
+</html>

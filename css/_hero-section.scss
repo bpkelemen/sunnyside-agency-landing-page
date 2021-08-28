@@ -1,0 +1,47 @@
+.hero {
+	position: relative;
+	picture img {
+		display: block;
+		width: 100%;
+		height: auto;
+		margin: 0 auto;
+	}
+	.hero-text {
+		position: absolute;
+		top: 27%;
+		left: 0;
+		width: 100%;
+
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+
+		h1 {
+			font-family: 'Fraunces', serif;
+			font-weight: 900;
+			font-size: 2.5rem;
+			color: $white;
+			text-transform: uppercase;
+			text-align: center;
+			letter-spacing: 0.4rem;
+		}
+		img {
+			margin-top: 4rem;
+		}
+	}
+}
+
+@media screen and (min-width: 1280px) {
+	.hero {
+		.hero-text {
+			top: 24%;
+			h1 {
+				font-size: 3.5rem;
+			}
+			img {
+				margin-top: 7.2rem;
+			}
+		}
+	}
+}

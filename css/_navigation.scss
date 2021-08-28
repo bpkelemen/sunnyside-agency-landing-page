@@ -1,0 +1,154 @@
+.navbar {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 1;
+
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 2rem 1.6rem;
+
+	.menu {
+		display: none;
+	}
+
+	.fade {
+		opacity: 0.5;
+	}
+
+	.hamburger {
+		transition: all 0.4s ease;
+	}
+
+	.menu-mobile {
+		position: absolute;
+		top: 5rem;
+		left: 6%;
+		width: 88%;
+
+		display: flex;
+		flex-direction: column;
+		align-items: flex-end;
+		justify-content: flex-end;
+
+		.triangle {
+			width: 0;
+			height: 0;
+			border-bottom: 1.56rem solid $white;
+			border-left: 1.56rem solid transparent;
+		}
+		.menu-links {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			width: 100%;
+			background-color: $white;
+			padding: 2.25rem 0;
+
+			ul {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				gap: 2.2rem;
+
+				li {
+					a {
+						font-size: 1.2rem;
+						text-decoration: none;
+						color: $dark-grayish-blue;
+					}
+					&:hover {
+						color: $very-dark-grayish-blue;
+					}
+				}
+				.active {
+					font-family: 'Fraunces', serif;
+					font-size: 0.93rem;
+					font-weight: 700;
+					text-transform: uppercase;
+					padding: 1.125rem 1.875rem;
+					background-color: $yellow;
+					margin-top: 1.875rem;
+					border-radius: 1.875rem;
+					cursor: pointer;
+
+					a {
+						color: rgba(36, 48, 62, 1);
+					}
+
+					&:hover {
+						color: $very-dark-grayish-blue;
+						background-color: hsla(51, 100%, 49%, 0.5);
+					}
+				}
+			}
+		}
+	}
+}
+
+@media screen and (min-width: 1280px) {
+	.navbar {
+		padding: 2.18rem 3.12rem 0.62rem 2.5rem;
+
+		.logo {
+			width: 10.62rem;
+		}
+
+		.menu {
+			display: flex;
+			position: static;
+
+			.triangle {
+				display: none;
+			}
+
+			.menu-links {
+				display: flex;
+				flex-direction: row;
+				align-items: center;
+
+				ul {
+					display: flex;
+					flex-direction: row;
+					gap: 3.25rem;
+
+					li {
+						a {
+							font-size: 1rem;
+							text-decoration: none;
+							color: $white;
+
+							&:hover {
+								text-decoration: underline;
+							}
+						}
+					}
+					.active {
+						a {
+							font-family: 'Fraunces', serif; //700 or 900
+							font-size: 0.93rem;
+							font-weight: 700;
+							text-transform: uppercase;
+							padding: 1.12rem 1.8rem;
+							background-color: $white;
+							border-radius: 1.8rem;
+							cursor: pointer;
+							color: $very-dark-desaturated-blue;
+
+							&:hover {
+								background-color: rgba(255, 255, 255, 0.3);
+								color: $white;
+								text-decoration: none;
+							}
+						}
+					}
+				}
+			}
+		}
+		.hamburger {
+			display: none;
+		}
+	}
+}
