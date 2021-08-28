@@ -558,6 +558,20 @@ body {
   display: block;
 }
 
+@media screen and (min-width: 1280px) {
+  .gallery {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .gallery .picture {
+    flex: 25%;
+  }
+  .gallery .picture img {
+    width: 100%;
+    display: block;
+  }
+}
 footer {
   display: flex;
   flex-direction: column;
