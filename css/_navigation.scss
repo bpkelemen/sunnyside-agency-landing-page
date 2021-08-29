@@ -9,7 +9,10 @@
 	align-items: center;
 	justify-content: space-between;
 	padding: 2rem 1.6rem;
-
+	button {
+		background-color: transparent;
+		border: none;
+	}
 	.menu {
 		display: none;
 	}
@@ -146,6 +149,10 @@
 					}
 				}
 			}
+		}
+
+		button {
+			display: none;
 		}
 		.hamburger {
 			display: none;

@@ -145,7 +145,6 @@ table {
 body {
   font-family: "Barlow", sans-serif;
   position: relative;
-  max-width: 700px;
   margin: 0 auto;
 }
 
@@ -207,6 +206,10 @@ body {
   align-items: center;
   justify-content: space-between;
   padding: 2rem 1.6rem;
+}
+.navbar button {
+  background-color: transparent;
+  border: none;
 }
 .navbar .menu {
   display: none;
@@ -321,6 +324,9 @@ body {
     background-color: rgba(255, 255, 255, 0.3);
     color: white;
     text-decoration: none;
+  }
+  .navbar button {
+    display: none;
   }
   .navbar .hamburger {
     display: none;
